@@ -1,0 +1,75 @@
+---
+title: SmartPOS SEL Probing Page
+---
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">  
+    <div class="navbar-header">  
+    <a class="navbar-brand" href="#">SmartPOS SEL Probing Page</a>
+      <div class="navbar-info first-el bordered">
+        <span class="info-label">mTAN-MSISDN:</span><div id="header-mtan-msisdn"></div>
+      </div>
+      <div class="navbar-info bordered">
+        <span class="info-label">username:</span><div id="header-username"></div>
+      </div>
+      <div class="navbar-info">
+        <span class="info-label">defaultVoID:</span><div id="header-void"></div>
+      </div>
+    </div>	
+    
+    <ul class="nav navbar-nav navbar-right mr-20">     
+      <li><button id="clear-storage" class="btn btn-custom btn-sm navbar-btn">Restart&nbsp;&nbsp;<span class="icon glyphicon glyphicon-floppy-remove"></span></button>
+      </li>        
+    </ul>
+  </div>
+</nav>
+
+<div id="mtanRequest" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>               
+        <h4 class="modal-title" id="id_modal-title">MTAN Request</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">	
+		<div class="col-xs-12">       
+		    <button type="button" id="id_mtan-request-btn" class="btn btn-custom mtan-request-btn">Request</button>
+		</div>
+		</div>
+      </div>	     
+    </div>
+  </div>
+</div>
+
+<div id="mtanResponse" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">MTAN Response</h4>
+      </div>
+      <div class="modal-body">       
+
+       <form class="form-inline">          
+          <div class="form-group">
+            <label for="mtan" class="sr-only">MTAN</label>
+            <input type="text" class="form-control" id="mtan-input" placeholder="MTAN">
+          </div>
+          <button type="button" id="id_mtan_send_button" class="btn btn-custom mtan-response-btn">Send</button>
+        </form>
+   
+      </div>	     
+    </div>
+  </div>
+</div>
+
+<div class="container">  
+  <div class="panel-group" id="accordion">   
+    
+  </div> 
+</div>

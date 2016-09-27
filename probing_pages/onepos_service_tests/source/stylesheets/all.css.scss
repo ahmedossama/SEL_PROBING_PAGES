@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+body {
+  background: #d4d4d4 url("../images/background.png");
+  text-align: center;
+  font-family: sans-serif; 
+}
+.environment {
+  margin-top: 5px;
+}
+.modal-body {
+  .environment {
+    margin-top: 0;
+  }
+}
+.container {
+    background-color: #fff;    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 30px;   
+    margin: 100px auto 50px; 
+    
+  }
+  .modal-content-pre {
+      line-height:1;
+      text-align:left;
+      margin:0 10px 10px;
+  }
+  .modal-content {
+    margin-top: 100px;
+  }
+  .modal-header {
+    border: none;
+    padding-bottom:0;
+  }
+  .modal-body {
+    padding-bottom:30px;
+  }
+  .navbar-header a {
+    text-transform: uppercase;
+  }
+  .modal-backdrop
+{
+    opacity:0 !important;
+}
+
+.panel-collapse  {
+  
+  .panel-heading {
+      background: #fff;
+  }
+  h5 {
+    font-weight: bold;
+    text-align: left;
+  }
+  .panel-body pre {
+    text-align: left;
+  }
+}
+
+.service-heading {
+  line-height:32px;
+  text-align: left; 
+
+  .labes-status {
+    margin-right: 15px;
+    margin-top: -2px;
+  }
+  .service-name {
+      display: inline-block;
+  }
+}
+.navbar-inverse {
+    background-color: #e60000;
+    border-color: #090909;
+
+    .navbar-brand {
+      color: #fff;
+    }
+}
+
+.container-fluid {
+  background: url("../images/logoVodafone1309.png") 20px center no-repeat;
+  background-size: 40px 40px;
+}
+.navbar-nav {
+  background: #d4d4d4 url("../images/background.png");
+  padding:0 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+.navbar-brand {
+  line-height: 24px; padding-left: 80px;
+}
+
+.btn-custom {
+  background-color: #5a5a5a;
+  border-color: #5a5a5a;
+  color: #fff;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+  background-color: #444;
+  border-color: #333;
+  color: #fff;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #fff;
+}
+.label-default {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 767px) {
+  .container-fluid {
+    position: relative;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 0;
+    top:0;
+    background: transparent;
+    padding: 0 10px 0 5px;    
+
+    li {
+      display: inline-block;
+    }
+    .environment {
+      margin-top: 0; 
+    }
+    .mr-20 {
+         margin-right: 0; 
+    }
+  }
+  .navbar-brand {
+    font-size: 16px;
+  }
+}
+
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.loading-time {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 80%;
+}
+.navbar-info {
+  float: left;
+  text-align: left;
+  color: #fff;
+  height: 50px;
+  padding: 7px 25px 0;  
+  position: relative;
+}
+.navbar-info.first-el {
+  margin-left: 100px;
+}
+.navbar-info.bordered::after {
+    content: '';
+    height: 30px;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: inline-block;
+ } 
+
+.info-label {
+  font-size: 12px;
+}
